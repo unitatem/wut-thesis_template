@@ -1,0 +1,23 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{polski}
+
+% time and date management
+\usepackage{datetime}
+\newcommand{\miesiac}{%
+  \ifcase\THEMONTH
+  \or Styczeń% 1
+  \or Luty% 2
+  \or Marzec% 3
+  \or Kwiecień% 4
+  \or Maj% 5
+  \or Czerwiec% 6
+  \or Lipiec% 7
+  \or Sierpień% 8
+  \or Wrzesień% 9
+  \or Październik% 10
+  \or Listopad% 11
+  \or Grudzień% 12
+  \fi}
+\newdateformat{mmyyyy}{\miesiac \  \THEYEAR}

@@ -1,0 +1,21 @@
+\usepackage{fullpage}
+
+\usepackage[inner=30mm,outer=20mm,top=25mm,bottom=25mm]{geometry}
+
+\setlength\parindent{0.5cm}
+\renewcommand{\baselinestretch}{1.15} 
+\makeatletter
+\def\ps@myPS{%
+    \def\@oddfoot{\null\hfill\thepage}
+    \def\@evenfoot{\thepage}%
+    \def\@evenhead{\null\hfil\slshape\leftmark}%
+    \def\@oddhead{{\slshape\rightmark}}}%
+\makeatother
+\makeatletter
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{myPS}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+\makeatother
+\pagestyle{myPS}

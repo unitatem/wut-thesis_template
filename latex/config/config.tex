@@ -1,0 +1,23 @@
+% custom build command
+% pdflatex -synctex=1 -interaction=nonstopmode %.tex|biber %|pdflatex -synctex=1 -interaction=nonstopmode %.tex|pdflatex -synctex=1 -interaction=nonstopmode %.tex|evince %.pdf
+
+\input{config/language.tex}
+\input{config/document_geometry.tex}
+\input{config/style.tex}
+\input{config/bibliography.tex}
+
+\input{config/math.tex}
+\input{config/code.tex}
+
+\input{config/user_defined.tex}
+
+% graphics
+\usepackage{graphicx}
+\graphicspath{{../img/}}
+\usepackage{float}
+
+
+
+
+
+

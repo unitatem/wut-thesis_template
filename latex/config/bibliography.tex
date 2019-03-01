@@ -1,0 +1,34 @@
+\usepackage{csquotes}
+\DeclareQuoteStyle[quotes]{polish}
+  {\quotedblbase}
+  {\textquotedblright}
+  [0.05em]
+  {\quotesinglbase}
+  {\fixligatures\textquoteright}
+\DeclareQuoteAlias[quotes]{polish}{polish}
+\DeclareQuoteOption{polish}
+
+% bibliography engine
+\usepackage[backend=biber,style=authoryear]{biblatex}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+% toc and enueration style: 1. 1.2. 1.2.3. chapter 1
+\def\numberline#1{\IfEndWith{#1}{.}{#1 }{#1. }}
+%\renewcommand\thechapter{\arabic{chapter}.}
+\renewcommand\thesection{\thechapter.\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}.}
+\renewcommand\thesubsubsection{\thesubsection\arabic{subsubsection}.}
+
+% appendix
+\usepackage[titletoc]{appendix}
+
+% linking / references
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}

@@ -1,0 +1,29 @@
+% ligatures
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = *}
+
+% formatting
+\brokenpenalty=1000		% nie dziel wyrazów miedzy stronami
+\clubpenalty=1000		% kara za sierotki
+\widowpenalty=10000		% nie pozostawiaj wdów
+
+% style?
+\usepackage{siunitx,booktabs,threeparttable,caption}
+\captionsetup[table]{justification=raggedright,singlelinecheck=off}
+\sisetup{separate-uncertainty=true}
+
+% Set all first-level bullet-point to ---
+\renewcommand\labelitemi{---}
+\renewcommand\labelitemii{--}
+
+% enumeration
+\usepackage{chngcntr}
+
+\usepackage{pdfpages}
+
+\captionsetup[figure]{justification=raggedright,singlelinecheck=off}
+\sisetup{separate-uncertainty=true}
+
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{subcaption}
