@@ -1,0 +1,19 @@
+# Latex
+*.aux
+*.bak
+*.bbl
+*.bcf
+*.blg
+*.div
+*.lof
+*.log
+*.lot
+*.out
+main.pdf
+*.run.xml
+*.synctex.gz
+*.toc
+
+# MS Office
+**/.~lock.*
+
